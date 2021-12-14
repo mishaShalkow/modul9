@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pr5.css">
+    <script src='pr5.js'></script>
+</head>
+<body>
+    <div class="container h1">Номер страницы
+        <input class="input inp1" placeholder="введите число">
+        <div class="output"></div>
+    </div>
+    <div class="container h2">Лимит
+        <input class="input inp2" placeholder="введите число">
+        <div class="output2"></div>
+    </div>
+    <div class="button h3">Запрос
+        <button class="btn">Нажмите сюда</button>
+        <div class="output3"></div>
+    </div>
+    <div class="output4"></div>
+<script>
+        const btnNode = document.querySelector(".btn");
+        btnNode.addEventListener('click', loaded);
+</script>
+</body>
+</html>

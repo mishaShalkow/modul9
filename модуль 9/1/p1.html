@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="pr4.js"></script>
+</head>
+<body>
+    <input class="input">
+    <button class="btn">Клинки меня</button>
+    <div class="div_class">Тут будет результат</div>
+    <script>
+        const btn = document.querySelector(".btn");
+        btn.addEventListener('click', addEv);
+
+        function disResult (Date) {
+        let cart = '';
+        Date.forEach(item => {
+        const cardBlock = `
+          <div class="card">
+            <img
+              src="${item.download_url}"
+              class="card-image"
+            />
+            <p>${item.author}</p>
+          </div>
+        `;
+        cart = cart + cardBlock;
+        });
+        btnNode.inerHTML = cart;
+}
+
+        const btnNode = document.querySelector('.div_class');
+        btnNode.addEventListener('click', () => {
+            addEv('https://picsum.photos/v2/list?limit=5', disResult);
+        })
+    </script>
+</body>
+</html>
